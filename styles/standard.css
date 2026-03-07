@@ -3,3 +3,14 @@
     scroll-behavior: smooth;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+:root {
+    --primary-color: rgb(245, 139, 69);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding-inline: 120px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}

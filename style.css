@@ -1,12 +1,31 @@
 :root {
     --primary-color: rgb(245, 139, 69);
+    --secondary-color: rgb(134, 62, 2);
+    --third-color: rgb(247, 182, 108);
 }
 
-.header {
+.head {
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    height: 56px;
+}
+
+.basket-btn {
     background-color: var(--primary-color);
-    padding-inline: 120px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    border-style: hidden;
+    font-size: xx-large;
+    cursor: pointer;
+    color: white;
+}
+
+.basket-btn:hover {
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+}
+
+.basket-btn:active {
+    background-color: var(--third-color);
 }
