@@ -1,0 +1,12 @@
+:root {
+    --primary-color: rgb(245, 139, 69);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding-inline: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
