@@ -1,31 +1,53 @@
 :root {
-    --primary-color: rgb(245, 139, 69);
+    --primary-color: rgba(231, 108, 31, 1);
     --secondary-color: rgb(134, 62, 2);
-    --third-color: rgb(247, 182, 108);
+    --third-color: rgba(253, 234, 220, 1);
 }
 
-.head {
+.header {
+    background-color: var(--primary-color);
+    padding-inline: 60px;
+}
+
+.big-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 500px;
+}
+
+.burger-icon {
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 13px solid var(--third-color);
+}
+
+.logo-btn {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 128px;
 }
 
-.logo {
-    height: 56px;
-}
-
-.basket-btn {
+.menu-btn {
     background-color: var(--primary-color);
     border-style: hidden;
-    font-size: xx-large;
     cursor: pointer;
-    color: white;
-}
-
-.basket-btn:hover {
-    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 16px;
 }
 
-.basket-btn:active {
+.menu-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.menu-btn:active {
     background-color: var(--third-color);
 }

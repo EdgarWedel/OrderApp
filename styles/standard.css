@@ -5,12 +5,5 @@
 }
 
 :root {
-    --primary-color: rgb(245, 139, 69);
-}
-
-header {
-    background-color: var(--primary-color);
-    padding-inline: 120px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    --primary-color: rgba(231, 108, 31, 1);
 }
