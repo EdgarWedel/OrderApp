@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'palanquin';
+    src: url(/fonts/Palanquin-Regular.ttf);
+}
+@font-face {
+    font-family: 'palanquin-dark';
+    src: url(/fonts/PalanquinDark-Regular.ttf);
+}
+
 * {
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 :root {
