@@ -95,11 +95,6 @@
     padding-top: 120px;
 }
 
-.star {
-    height: 23px;
-    width: 24px;
-}
-
 .underline {
     font-weight: bold;
     font-size: 24px;
@@ -117,22 +112,11 @@
     gap: 24px;
 }
 
-.burger-icon {
-    margin-top: -24px;
-}
-
 .menu-headline {
     color: white;
     font-family: var(--palanquin);
     font-weight: 700;
     font-size: 40px;
-}
-
-.menu-img {
-    height: 140px;
-    width: 220px;
-    border-radius: 12px;
-    object-fit: cover;
 }
 
 .menu-box {
@@ -172,19 +156,4 @@
     flex-direction: column;
     justify-content: space-between;
     width: 115px;
-}
-
-.price {
-    text-align: end;
-    font-size: 24px;
-    font-weight: 600;
-    font-family: var(--palanquin);
-}
-
-.add-btn {
-    font-family: var(--palanquin);
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 20px;
-    border-style: hidden;
 }
