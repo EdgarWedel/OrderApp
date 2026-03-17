@@ -11,8 +11,10 @@
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'palanquin-dark';
+    color: var(--font-color);
 }
 
 :root {
     --primary-color: rgba(231, 108, 31, 1);
+    --font-color: rgba(54, 53, 52, 1);
 }

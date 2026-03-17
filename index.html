@@ -14,7 +14,7 @@
     <script src="./scripts/templates.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <header>
         <section class="header">
             <div class="logo-btn">
@@ -25,16 +25,18 @@
             </div>
         </section>
         <div class="header-image">
-            <img class="big-img" src="./assets/img/9368f6ab61c8df3bac59f014cab9c6aa8df459ec.jpg" alt="Ein Teller mit einer Pizza">
+            <img class="big-img" src="./assets/img/9368f6ab61c8df3bac59f014cab9c6aa8df459ec.jpg"
+                alt="Ein Teller mit einer Pizza">
             <img class="header-icon" src="./assets/icons/5045650232394c82bc6d0c922b2ea0aaace7e71d.png" alt="">
         </div>
-        
+
     </header>
-    <main>
+    <main id="food-list">
         <section class="headline">
             <div class="gap">
                 <div class="display">
-                    <h1 class="color">Burger</h1><h1>House</h1>
+                    <h1 class="color">Burger</h1>
+                    <h1>House</h1>
                 </div>
                 <div class="background">
                     <img class="star" src="./assets/icons/star.png" alt="Stern">
@@ -45,9 +47,24 @@
             <p class="underline">The best of Burgers, Pizza and Greens, all in one great place.</p>
         </section>
         <section class="menu">
-            <div class="burger-menu-bg">
+            <div class="menu-bg">
                 <img class="burger-icon" src="./assets/icons/Chanese 1.png" alt="">
-                <h2  class="burger-menu-headline">Burger & Sandwiches</h2>
+                <h2 class="menu-headline">Burger & Sandwiches</h2>
+            </div>
+        </section>
+        <section class="burger-menu">
+            <div class="menu-box">
+                <img class="menu-img" src="./assets/img/burger-1.jpg" alt="">
+                <div class="menu-info-box">
+                    <div>
+                        <h3 class="menu-box-head">Veggie mushroom black hunger</h3>
+                        <span class="menu-box-underline">Mixed grren salad, Tomatoes, Edamame, Mushrooms</span>
+                    </div>
+                    <div class="add-box">
+                        <p class="price">16,90 €</p>
+                        <button class="add-btn">Add to basket</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
