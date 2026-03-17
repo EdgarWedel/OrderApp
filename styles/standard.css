@@ -18,3 +18,12 @@
     --primary-color: rgba(231, 108, 31, 1);
     --font-color: rgba(54, 53, 52, 1);
 }
+
+footer {
+    height: 128px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 120px;
+}

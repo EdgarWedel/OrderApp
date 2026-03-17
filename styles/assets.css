@@ -4,6 +4,7 @@
     font-weight: 600;
     border-radius: 20px;
     border-style: hidden;
+    width: 110px;
 }
 
 .price {
@@ -27,4 +28,14 @@
 .star {
     height: 23px;
     width: 24px;
+}
+
+.background {
+    background-color: rgba(250, 202, 172, 1);
+    border-radius: 4px;
+    padding-inline: 5px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 8px;
 }
