@@ -2,6 +2,7 @@
     font-family: 'palanquin';
     src: url(/fonts/Palanquin-Regular.ttf);
 }
+
 @font-face {
     font-family: 'palanquin-dark';
     src: url(/fonts/PalanquinDark-Regular.ttf);
@@ -16,6 +17,10 @@
 
 :root {
     --primary-color: rgba(231, 108, 31, 1);
+    --secondary-color: rgb(134, 62, 2);
+    --third-color: rgba(253, 234, 220, 1);
+    --font-color-white: rgba(255, 255, 255, 1);
+    --palanquin: 'palanquin';
     --font-color: rgba(54, 53, 52, 1);
 }
 
