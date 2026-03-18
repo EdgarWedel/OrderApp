@@ -180,7 +180,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
 }
 
 .basket-headline {
@@ -188,4 +187,28 @@
     font-family: var(--palanquin);
     font-weight: 700;
     font-size: 32px;
+    margin-top: 40px;
+}
+
+.empty-basket-info {
+    color: var(--third-color);
+    font-family: var(--palanquin);
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    padding-top: 40px;
+    width: 380px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.empty-basket-icon {
+    height: 120px;
+    width: 120px;
 }
