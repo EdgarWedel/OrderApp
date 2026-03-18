@@ -35,3 +35,22 @@ function getPizzaTemplate(pizzaIndex) {
         </section>
     `
 }
+
+function getSaladTemplate(saladIndex) {
+    return `
+        <div class="menu-box">
+                <img class="menu-img" src="${foods.salads[saladIndex].image}" alt="">
+                <div class="menu-info-box">
+                    <div>
+                        <h3 class="menu-box-head">${foods.salads[saladIndex].name}</h3>
+                        <span class="menu-box-underline">${foods.salads[saladIndex].info}</span>
+                    </div>
+                    <div class="add-box">
+                        <p class="price">${foods.salads[saladIndex].price}0 €</p>
+                        <button class="add-btn">Add to basket</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `
+}

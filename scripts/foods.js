@@ -76,5 +76,10 @@ let foods = {
             "info": "Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts",
             "price": 14.90
         },
+    ],
+    "basket": [
+        {
+            
+        }
     ]
 };
