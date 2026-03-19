@@ -1,3 +1,11 @@
+:root {
+    --primary-color: rgba(231, 108, 31, 1);
+    --secondary-color: rgb(134, 62, 2);
+    --third-color: rgba(253, 234, 220, 1);
+    --font-color-white: rgba(255, 255, 255, 1);
+    --palanquin: 'palanquin';
+}
+
 .add-btn {
     font-family: var(--palanquin);
     font-size: 16px;
@@ -5,6 +13,13 @@
     border-radius: 20px;
     border-style: hidden;
     width: 110px;
+}
+
+.add-btn:hover {
+    color: var(--primary-color);
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    animation-timing-function: ease-in;
+    animation-duration: 200ms;
 }
 
 .price {
@@ -38,4 +53,54 @@
     justify-self: center;
     align-items: center;
     gap: 8px;
+}
+
+.increase-btn {
+    background-color: var(--third-color);
+    border-style: hidden;
+    height: 24px;
+    width: 24px;
+}
+
+.increase-btn:hover {
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+    background-color: white    ;
+}
+
+.delete-btn {
+    background-color: var(--third-color);
+    border-style: hidden;
+    height: 24px;
+    width: 24px;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.hover {
+    height: 18px;
+    width: 16px;
+}
+
+.icon.hover {
+    display: none;
+}
+
+.delete-btn:hover .icon.default {
+    display: none;
+}
+
+.delete-btn:hover .icon.hover {
+    display: inline;
+    background-color: white;
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }

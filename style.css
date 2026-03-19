@@ -205,10 +205,55 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 500px;
+    width: 340px;
 }
 
 .empty-basket-icon {
     height: 120px;
     width: 120px;
+    margin-top: 100px;
+}
+
+.basket-food-box {
+    background-color: var(--third-color);
+    width: 300px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+.basket-name {
+    font-family: var(--palanquin);
+    font-size: 22px;
+    font-weight: 700;
+    width: 300px;
+    height: 50px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+}
+
+.amount {
+    font-family: var(--palanquin);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+.basket-price {
+    font-family: var(--palanquin);
+    font-weight: 700;
+    font-size: 22px;
 }
