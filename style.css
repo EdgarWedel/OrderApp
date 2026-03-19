@@ -180,6 +180,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .basket-headline {
@@ -187,7 +188,7 @@
     font-family: var(--palanquin);
     font-weight: 700;
     font-size: 32px;
-    margin-top: 40px;
+    margin-top: 10 px;
 }
 
 .empty-basket-info {
@@ -209,6 +210,9 @@
     overflow-x: hidden;
     height: 500px;
     width: 340px;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--third-color) rgba(54, 53, 52, 1);
+    scrollbar-width: thin;
 }
 
 .empty-basket-icon {
@@ -256,4 +260,22 @@
     font-family: var(--palanquin);
     font-weight: 700;
     font-size: 22px;
+}
+
+.total-table {
+    width: 340px;
+}
+
+.line {
+    border: 1px solid white;
+    width: 340px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.dialog-img {
+    height: 100px;
+    width: 100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }

@@ -28,7 +28,7 @@ function getPizzaTemplate(pizzaIndex) {
                     </div>
                     <div class="add-box">
                         <p class="price">${foods.pizzas[pizzaIndex].price}0 €</p>
-                        <button onclick="addToBasket()" id="add_btn" class="add-btn">Add to basket</button>
+                        <button onclick="addToBasketPizza(${pizzaIndex})" id="add_btn" class="add-btn">Add to basket</button>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@ function getSaladTemplate(saladIndex) {
                     </div>
                     <div class="add-box">
                         <p class="price">${foods.salads[saladIndex].price}0 €</p>
-                        <button onclick="addToBasket()"      id="add_btn" class="add-btn">Add to basket</button>
+                        <button onclick="addToBasketSalad(${saladIndex})" id="add_btn" class="add-btn">Add to basket</button>
                     </div>
                 </div>
             </div>
@@ -83,10 +83,33 @@ function getBasketTemplate(basketIndex) {
                     </div>
                     <span class="basket-price">${foods.basket[basketIndex].price}0 €</span>
                 </div>
-            </div> 
-            <div>
-                <p>Subtotal</p><p>$
+            </div>    
+    `
+}
 
-            </div>   
+function getPriceTemplate() {
+    return `
+            <table class="total-table">
+                    <tr>
+                        <td>Subtotal</td>
+                        <td style="text-align: right;">${foods.result()} €</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Fee</td>
+                        <td style="text-align: right;">4,99 €</td>
+                    </tr>
+                </table>
+                <div class="line">
+
+                </div>
+                <table class="total-table">
+                    <tr>
+                        <td>Total</td>
+                        <td id="total_sum" style="text-align: right;">${foods.totalresult()} €</td>
+                    </tr>
+                </table>
+                <button onclick="confirmOrder()" class="buy-btn">
+                    Buy now (${foods.totalresult()} €)
+                </button>
     `
 }

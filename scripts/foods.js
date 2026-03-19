@@ -78,6 +78,26 @@ let foods = {
         },
     ],
     "basket": [
-        
-    ]
+
+    ],
+    "result": function calculatePrice() {
+        let sum = 0;
+
+        this.basket.forEach(item => {
+            sum += item.price * item.amount;
+        });
+
+        return sum.toFixed(2);
+    },
+    "totalresult": function calculateTotalPrice() {
+        let sum = 0;
+
+        this.basket.forEach(item => {
+            sum += item.price * item.amount;
+        });
+
+        let totalSum = sum + 4.99;
+
+        return totalSum.toFixed(2);
+    }
 };

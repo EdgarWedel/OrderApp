@@ -104,3 +104,28 @@
     border-radius: 4px;
     box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
+
+.buy-btn {
+    width: 340px;
+    height: 64px;
+    border-radius: 60px;
+    border-style: hidden;
+    font-family: var(--palanquin);
+    font-size: 32px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 16px;
+}
+
+.position-close-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.close-btn {
+    border-style: hidden;
+    background-color: rgba(54, 53, 52, 1);
+    font-size: 16px;
+    color: var(--third-color);
+}
