@@ -74,7 +74,12 @@ function renderTotalPrice() {
     price.innerHTML = getPriceTemplate();
 }
 
-function confirmOrder() {
+function openDialog() {
     confirmRef = document.getElementById('confirm_dialog');
     confirmRef.show()
+}
+
+function closeDialog() {
+    confirmRef = document.getElementById('confirm_dialog');
+    confirmRef.close()
 }

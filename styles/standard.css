@@ -47,9 +47,9 @@ td {
 dialog {
     position: fixed;
     top: 25%;
-    left: 40%;
-    height: 270px;
-    width: 415px;
+    left: 35%;
+    height: 300px;
+    width: 440px;
     background-color:rgba(54, 53, 52, 1);
     border-radius: 30px;
     padding: 32px;

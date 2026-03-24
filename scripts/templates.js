@@ -108,7 +108,7 @@ function getPriceTemplate() {
                         <td id="total_sum" style="text-align: right;">${foods.totalresult()} €</td>
                     </tr>
                 </table>
-                <button onclick="confirmOrder()" class="buy-btn">
+                <button onclick="openDialog()" class="buy-btn">
                     Buy now (${foods.totalresult()} €)
                 </button>
     `

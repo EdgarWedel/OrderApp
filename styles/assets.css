@@ -67,7 +67,7 @@
     height: 24px;
     width: 24px;
     border-radius: 8px;
-    background-color: white    ;
+    background-color: white;
 }
 
 .delete-btn {
@@ -127,5 +127,4 @@
     border-style: hidden;
     background-color: rgba(54, 53, 52, 1);
     font-size: 16px;
-    color: var(--third-color);
 }
