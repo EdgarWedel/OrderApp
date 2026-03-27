@@ -78,7 +78,7 @@ function getBasketTemplate(basketIndex) {
                         <img class="icon default" src="./assets/icons/delete.png" alt="">
                         <img class="icon hover" src="./assets/icons/deletehover.png" alt="">
                         </button>
-                        <span class="amount">1</span>
+                        <span class="amount">${foods.basket[basketIndex].amount}</span>
                         <button class="increase-btn"><img src="./assets/icons/+.png" alt=""></button>
                     </div>
                     <span class="basket-price">${foods.basket[basketIndex].price}0 €</span>
@@ -129,9 +129,6 @@ function renderDialog() {
                         <h3 class="dialog-under">Your food is on the way!</h3>
                     </div>
                 </div>
-            </main>
-            <footer class="display-none">
-            
-            </footer>    
+            </main>    
     `
 }
