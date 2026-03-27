@@ -76,10 +76,17 @@ function renderTotalPrice() {
 
 function openDialog() {
     confirmRef = document.getElementById('confirm_dialog');
-    confirmRef.show()
+    confirmRef.showModal()
+    confirmRef.innerHTML = renderDialog();
 }
 
 function closeDialog() {
     confirmRef = document.getElementById('confirm_dialog');
     confirmRef.close()
+}
+
+window.onclick = function (event) {
+    confirmRef = document.getElementById('confirm_dialog');
+    if (event.target == confirmRef)
+        confirmRef.close();
 }

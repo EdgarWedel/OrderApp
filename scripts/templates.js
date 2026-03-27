@@ -113,3 +113,25 @@ function getPriceTemplate() {
                 </button>
     `
 }
+
+function renderDialog() {
+    return `
+            <header>
+                <div style="text-align: end;">
+                    <button class="close-btn"><img onclick="closeDialog()" src="./assets/icons/close.png" alt=""></button>
+                </div>
+            </header>
+            <main>    
+                <div class="display-position">
+                    <img class="dialog-img" src="./assets/img/order-confirmed.png" alt="">
+                    <div>
+                        <h2 class="dialog-head">Order confirmed!</h2>
+                        <h3 class="dialog-under">Your food is on the way!</h3>
+                    </div>
+                </div>
+            </main>
+            <footer class="display-none">
+            
+            </footer>    
+    `
+}
