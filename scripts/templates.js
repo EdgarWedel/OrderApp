@@ -69,17 +69,27 @@ function getBasketTemplate(basketIndex) {
     return `
             <div class="basket-food-box">
                 <div>
-                    <span class="amount">${foods.basket[basketIndex].amount} x</span>
+                    <span id="amount" class="amount">${foods.basket[basketIndex].amount} x</span>
                     <span class="basket-name">${foods.basket[basketIndex].name}</span>
                 </div>    
                 <div class="nav-bar">
                     <div class="nav-btns">
-                        <button class="delete-btn">
-                        <img class="icon default" src="./assets/icons/delete.png" alt="">
-                        <img class="icon hover" src="./assets/icons/deletehover.png" alt="">
-                        </button>
-                        <span class="amount">${foods.basket[basketIndex].amount}</span>
-                        <button class="increase-btn"><img src="./assets/icons/+.png" alt=""></button>
+                                                ${
+                                                    foods.basket[basketIndex].amount === 1
+                                                    ? `
+                                                        <button onclick="deleteItem(${basketIndex})" class="delete-btn">
+                                                            <img class="icon default" src="./assets/icons/delete.png" alt="">
+                                                            <img class="icon hover" src="./assets/icons/deletehover.png" alt="">
+                                                        </button>
+                                                    `
+                                                    : `
+                                                        <button onclick="decreaseAmount(${basketIndex})" class="quantity-btn">
+                                                        -
+                                                        </button>
+                                                    `
+                                                }
+                        <span id="amount_ref" class="amount">${foods.basket[basketIndex].amount}</span>
+                        <button onclick="increaseAmount(${basketIndex})" class="quantity-btn">+</button>
                     </div>
                     <span class="basket-price">${foods.basket[basketIndex].price}0 €</span>
                 </div>

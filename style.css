@@ -8,7 +8,6 @@
 
 .header {
     background-color: var(--primary-color);
-    padding-inline: 60px;
 }
 
 .logo {
@@ -92,11 +91,13 @@
     text-align: center;
 }
 
-.menu-bg {
+.menu {
     background-color: var(--primary-color);
+    margin-top: 40px;
+}
+
+.menu-bg {
     height: 60px;
-    margin-top: 120px;
-    padding-inline: 160px;
     display: flex;
     align-items: center;
     gap: 24px;
@@ -111,12 +112,10 @@
 
 .menu-box {
     display: flex;
-    gap: 8px;
     background-color: var(--third-color);
-    width: 715px;
+    width: fit-content;
     border-radius: 12px;
     margin-top: 24px;
-    margin-left: 120px;
     padding: 16px;
 }
 
@@ -168,8 +167,6 @@
 }
 
 .basket-layout {
-    height: 795px;
-    width: 435px;
     background-color: rgba(54, 53, 52, 1);
     position: fixed;
     top: 50px;
@@ -177,8 +174,9 @@
     border-radius: 24px 0 0 24px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .basket-headline {
@@ -186,7 +184,6 @@
     font-family: var(--palanquin);
     font-weight: 700;
     font-size: 32px;
-    margin-top: 10 px;
 }
 
 .empty-basket-info {
@@ -206,8 +203,8 @@
     align-items: center;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 500px;
-    width: 340px;
+    height: 380px;
+    width: 350px;
     scroll-behavior: smooth;
     scrollbar-color: var(--third-color) rgba(54, 53, 52, 1);
     scrollbar-width: thin;
@@ -304,4 +301,35 @@
 
 dialog::backdrop {
     background-color: rgba(231, 108, 31, 0.7);
+}
+
+.max-width {
+    width: 1920px;
+}
+
+.display-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu-bg {
+    background-color: rgba(54, 53, 52, 1);
+}
+
+.mobile-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.vanish {
+    display: none;
+}
+
+@media (max-width: 2000px) {
+    .max-width {
+        width: 1440px;
+    }
 }

@@ -60,13 +60,24 @@ function addToBasketSalad(saladIndex) {
 }
 
 function renderBasket() {
+    let basketRef = document.getElementById('basket');
     let basket = document.getElementById('basket');
     basket.innerHTML = "";
 
-    for (let basketIndex = 0; basketIndex < foods.basket.length; basketIndex++) {
-        basket.innerHTML += getBasketTemplate(basketIndex);
+    if (foods.basket.length === 0) {
+        basketRef.innerHTML = getEmptyBasketTemplate();
+    } else {
+        basketRef.innerHTML = "";
+        for (let basketIndex = 0; basketIndex < foods.basket.length; basketIndex++) {
+            basketRef.innerHTML += getBasketTemplate(basketIndex);
+        }
     }
-    renderTotalPrice();
+    if (foods.basket.length > 0) {
+        renderTotalPrice();
+    } else {
+        let price = document.getElementById('total_price');
+        price.innerHTML = "";
+    }
 }
 
 function renderTotalPrice() {
@@ -89,4 +100,19 @@ window.onclick = function (event) {
     confirmRef = document.getElementById('confirm_dialog');
     if (event.target == confirmRef)
         confirmRef.close();
+}
+
+function increaseAmount(basketIndex) {
+    foods.basket[basketIndex].amount++;
+    renderBasket();
+}
+
+function decreaseAmount(basketIndex) {
+    foods.basket[basketIndex].amount--;
+    renderBasket();
+}
+
+function deleteItem(basketIndex) {
+    foods.basket.splice(basketIndex, 1);
+    renderBasket();
 }
