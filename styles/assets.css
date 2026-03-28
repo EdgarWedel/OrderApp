@@ -139,3 +139,20 @@
     background-color: rgba(54, 53, 52, 1);
     font-size: 16px;
 }
+
+
+@media (max-width: 450px) {
+
+    .menu-icon {
+        height: 60px;
+        width: 58px;
+        position: absolute;
+        margin-top: -85px;
+    }
+
+    .menu-img {
+        width: auto;
+        height: 88px;
+        border-radius: 12px;
+    }
+}

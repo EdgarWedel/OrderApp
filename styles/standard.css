@@ -28,8 +28,6 @@ body {
 }
 
 footer {
-    height: 128px;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -51,7 +49,7 @@ dialog {
     padding: 32px;
     border-width: 0px;
     width: 440px;
-    background-color:rgba(54, 53, 52, 1);
+    background-color: rgba(54, 53, 52, 1);
     border-radius: 30px;
 }
 
@@ -61,4 +59,13 @@ h1 {
 
 h3 {
     margin: 0;
+}
+
+@media (max-width: 450px) {
+    footer {
+        margin-top: 40px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
 }
