@@ -41,6 +41,7 @@
     justify-content: space-between;
     align-items: center;
     height: 128px;
+    padding-inline: 120px;
 }
 
 .menu-btn {
@@ -67,6 +68,10 @@
     font-size: 48px;
     justify-content: center;
     align-items: center;
+}
+
+.padding-left {
+    padding-left: 120px;
 }
 
 .gap {
@@ -328,8 +333,47 @@ dialog::backdrop {
     display: none;
 }
 
-@media (max-width: 2000px) {
-    .max-width {
-        width: 1440px;
+@media (max-width: 450px) {
+    .basket-layout {
+        display: none;
+    }
+
+    .header {
+        width: stretch;
+        height: 80px;
+    }
+
+    .logo {
+        height: 35px;
+        width: 90px;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .logo-btn {
+        padding-left: 20px;
+        height: 75px;
+    }
+
+    .big-img {
+        padding: 8px;
+        border-radius: 16px;
+        height: 365px;
+        width: 345px;
+    }
+
+    .header-icon {
+        height: 120px;
+        width: 120px;
+        position: fixed;
+        top: 425px;
+        left: 180px;
+    }
+
+    .display {
+        font-size: 40px;
+        display: flex;
     }
 }
