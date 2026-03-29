@@ -335,18 +335,243 @@ dialog::backdrop {
     object-fit: contain;
 }
 
-.vanish {
-    display: none;
+.order-confirmed {
+    padding: 32px;
+    border-width: 0px;
+    width: 440px;
+    background-color: rgba(54, 53, 52, 1);
+    border-radius: 30px;
 }
 
-@media (max-width: 450px) {
-    .basket-layout {
-        display: none;
-    }
-
+@media (max-width: 770px) {
     .header {
         width: stretch;
         height: 80px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .basket-layout {
+        border-radius: 0;
+        top: 0;
+        padding: 0;
+        width: stretch;
+    }
+
+    .basket-food-box {}
+
+    .logo {
+        height: 35px;
+        width: 90px;
+        padding: 0;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .logo-btn {
+        padding-left: 20px;
+        height: 75px;
+    }
+
+    .big-img {
+        padding: 8px;
+        border-radius: 16px;
+        height: 365px;
+        width: stretch;
+    }
+
+    .header-icon {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 380px;
+        left: 50%;
+    }
+
+    .display {
+        font-size: 54px;
+        display: flex;
+    }
+
+    .gap {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .underline {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .menu {
+        margin-top: 100px;
+    }
+
+    .padding-left {
+        padding-left: 0;
+    }
+
+    .menu-headline {
+        margin: 0;
+        position: absolute;
+        font-size: 40px;
+    }
+
+    .menu-bg {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-underline {
+        font-size: 32px;
+        color: white;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        background-color: var(--primary-color);
+        width: stretch;
+    }
+
+    .menu-box {
+        display: flex;
+        gap: 16px;
+        margin: 16px;
+        padding: 8px;
+        width: auto;
+    }
+
+    .menu-info-box {
+        padding-left: 0;
+        display: flex;
+        width: stretch;
+    }
+
+    .menu-box-head {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .add-box {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-nav-bar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(54, 53, 52, 1);
+        width: stretch;
+        height: 80px;
+    }
+
+    .mobile-nav-icon {
+        height: 28px;
+        width: 28px;
+    }
+
+    .position-sticky {
+        position: sticky;
+        bottom: 0;
+        width: stretch;
+    }
+
+    .mobile-basket-quantity {
+        color: var(--primary-color);
+        position: absolute;
+        margin-top: -7px;
+        margin-left: -4px;
+    }
+
+    .mobile-quantity-bg {
+        height: 15px;
+        width: 15px;
+        background-color: var(--third-color);
+        border-radius: 50%;
+        position: absolute;
+        margin-top: -36px;
+        margin-left: 16px;
+    }
+
+    .mobile-basket-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 380px;
+        width: 350px;
+        scroll-behavior: smooth;
+        scrollbar-color: var(--third-color) rgba(54, 53, 52, 1);
+        scrollbar-width: thin;
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        width: stretch;
+        height: 80px;
+    }
+
+    .quantity-num {
+        color: var(--primary-color);
+        border-radius: 50%;
+        font-family: var(--palanquin);
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        top: -5px;
+    }
+
+    .quantity-bg {
+        background-color: var(--third-color);
+        height: 15px;
+        width: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 22px;
+        right: 50px;
+    }
+
+    .bg-color {
+        background-color: rgba(54, 53, 52, 1);
+    }
+
+    .basket-layout {
+        border-radius: 0;
+        top: 0;
+        padding: 0;
+        width: stretch;
+        height: 587px;
+    }
+
+    .order-confirmed {
+        padding: 18px;
+        width: 300px;
+    }
+
+    .dialog-under {
+        font-size: 24px;
+    }
+
+    .dialog-head {
+        font-size: 36px;
     }
 
     .logo {
@@ -375,7 +600,7 @@ dialog::backdrop {
         width: 120px;
         position: absolute;
         top: 380px;
-        left: 180px;
+        left: 50%;
     }
 
     .display {

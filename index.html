@@ -34,7 +34,7 @@
 
     </header>
     <main>
-        <dialog tabindex="0" id="confirm_dialog">
+        <dialog class="order-confirmed" tabindex="0" id="confirm_dialog">
 
         </dialog>
 
@@ -89,12 +89,12 @@
             </div>
         </section>
 
-        <section class="basket-layout">
+        <section id="responsive_basket" class="basket-layout hide">
             <h3 class="basket-headline">Your Basket</h3>
             <div id="basket" class="column">
 
             </div>
-            <div style="padding-top: 16px;" id="total_price">
+            <div class="mobile-basket-price" id="total_price">
 
             </div>
         </section>
@@ -109,13 +109,8 @@
             <span class="footer-font">Cookie Preference</span>
         </section>
     </footer>
-    <section class="position-sticky">
-        <div class="mobile-nav-bar">
-            <img class="mobile-nav-icon" src="./assets/icons/home.png" alt="">
-            <img class="mobile-nav-icon" src="./assets/icons/person.png" alt="">
-            <img class="mobile-nav-icon" src="./assets/icons/takeout_dining_2.png" alt="">
-            <img class="mobile-nav-icon" src="./assets/icons/shopping_cart.png" alt="">
-        </div>
+    <section id="responsive_nav_bar" class="position-sticky">
+        
     </section>
 </body>
 

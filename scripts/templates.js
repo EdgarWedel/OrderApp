@@ -61,7 +61,7 @@ function getEmptyBasketTemplate() {
                     Nothing here yet.
                     Go ahead and choose something delicious!
                 </span>
-                <img class="empty-basket-icon" src="./assets/icons/shopping_cart.png" alt="">
+                <img class="empty-basket-icon" src="./assets/icons/basket.png" alt="">
         `
 }
 
@@ -74,20 +74,19 @@ function getBasketTemplate(basketIndex) {
                 </div>    
                 <div class="nav-bar">
                     <div class="nav-btns">
-                                                ${
-                                                    foods.basket[basketIndex].amount === 1
-                                                    ? `
+                                                ${foods.basket[basketIndex].amount === 1
+            ? `
                                                         <button onclick="deleteItem(${basketIndex})" class="delete-btn">
                                                             <img class="icon default" src="./assets/icons/delete.png" alt="">
-                                                            <img class="icon hover" src="./assets/icons/deletehover.png" alt="">
+                                                            <img class="icon hover" src="./assets/hover/deletehover.png" alt="">
                                                         </button>
                                                     `
-                                                    : `
+            : `
                                                         <button onclick="decreaseAmount(${basketIndex})" class="quantity-btn">
                                                         -
                                                         </button>
                                                     `
-                                                }
+        }
                         <span id="amount_ref" class="amount">${foods.basket[basketIndex].amount}</span>
                         <button onclick="increaseAmount(${basketIndex})" class="quantity-btn">+</button>
                     </div>
@@ -140,5 +139,33 @@ function renderDialog() {
                     </div>
                 </div>
             </main>    
+    `
+}
+
+function getMobileNavBarTemplate() {
+    return `
+            <div class="mobile-nav-bar">
+            <button class="mobile-nav-icon">
+                <img class="icon default" src="./assets/icons/home.png" alt="">
+                <img class="icon hover" src="./assets/hover/home.png" alt="">
+            </button>
+            <button class="mobile-nav-icon">
+                <img class="icon default" src="./assets/icons/person.png" alt="">
+                <img class="icon hover" src="./assets/hover/person hover.png" alt="">
+            </button>
+            <button class="mobile-nav-icon">
+                <img class="icon default" src="./assets/icons/takeout_dining_2.png" alt="">
+                <img class="icon hover" src="./assets/hover/takeout_dining_2 hover.png" alt="">
+            </button>
+            <button id="mobile-basket-btn" class="mobile-nav-icon" onclick="openBasket()">
+                <img class="icon default" src="./assets/icons/shopping_cart.png" alt="">
+                <img class="icon hover" src="./assets/hover/shopping_cart.png" alt="">
+                <section class="display-none" id="quantity_bg">
+                    <div class="quantity-bg">
+                    <span class="quantity-num display-none" id="quantity_basket">${foods.basket.length}</span>
+                    </div>
+                </secction>
+            </button>
+        </div>
     `
 }

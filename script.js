@@ -24,6 +24,7 @@ function init() {
             basketRef.innerHTML += getBasketTemplate(basketIndex);
         }
     }
+    renderMobileNavBar();
 };
 
 function addToBasketBurger(burgerIndex) {
@@ -35,6 +36,7 @@ function addToBasketBurger(burgerIndex) {
 
     foods.basket.push(addedItem);
     renderBasket();
+    renderMobileNavBar()
 }
 
 function addToBasketPizza(pizzaIndex) {
@@ -46,6 +48,7 @@ function addToBasketPizza(pizzaIndex) {
 
     foods.basket.push(addedItem);
     renderBasket();
+    renderMobileNavBar()
 }
 
 function addToBasketSalad(saladIndex) {
@@ -57,6 +60,7 @@ function addToBasketSalad(saladIndex) {
 
     foods.basket.push(addedItem);
     renderBasket();
+    renderMobileNavBar()
 }
 
 function renderBasket() {
@@ -78,6 +82,12 @@ function renderBasket() {
         let price = document.getElementById('total_price');
         price.innerHTML = "";
     }
+}
+
+function renderMobileNavBar() {
+    let navBar = document.getElementById('responsive_nav_bar');
+    navBar.innerHTML = getMobileNavBarTemplate();
+    showQuantity();
 }
 
 function renderTotalPrice() {
@@ -115,4 +125,20 @@ function decreaseAmount(basketIndex) {
 function deleteItem(basketIndex) {
     foods.basket.splice(basketIndex, 1);
     renderBasket();
+    renderMobileNavBar();
+}
+
+function openBasket() {
+    let basket = document.getElementById('responsive_basket');
+    basket.classList.toggle('hide');
+}
+
+function showQuantity() {
+    let quantity = document.getElementById('quantity_basket');
+    let quantityBg = document.getElementById('quantity_bg');
+
+    if (foods.basket.length > 0) {
+        quantity.classList.remove('display-none');
+        quantityBg.classList.remove('display-none');
+    }
 }

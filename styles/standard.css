@@ -45,14 +45,6 @@ td {
     font-size: 20px;
 }
 
-dialog {
-    padding: 32px;
-    border-width: 0px;
-    width: 440px;
-    background-color: rgba(54, 53, 52, 1);
-    border-radius: 30px;
-}
-
 h1 {
     margin: 0;
 }
