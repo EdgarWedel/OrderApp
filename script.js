@@ -138,7 +138,7 @@ function showQuantity() {
     let quantityBg = document.getElementById('quantity_bg');
 
     if (foods.basket.length > 0) {
-        quantity.classList.remove('display-none');
-        quantityBg.classList.remove('display-none');
+        quantity.classList.remove('hide-quantity');
+        quantityBg.classList.remove('hide-quantity');
     }
 }

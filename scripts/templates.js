@@ -160,9 +160,9 @@ function getMobileNavBarTemplate() {
             <button id="mobile-basket-btn" class="mobile-nav-icon" onclick="openBasket()">
                 <img class="icon default" src="./assets/icons/shopping_cart.png" alt="">
                 <img class="icon hover" src="./assets/hover/shopping_cart.png" alt="">
-                <section class="display-none" id="quantity_bg">
+                <section class="hide-quantity" id="quantity_bg">
                     <div class="quantity-bg">
-                    <span class="quantity-num display-none" id="quantity_basket">${foods.basket.length}</span>
+                    <span class="quantity-num hide-quantity" id="quantity_basket">${foods.basket.length}</span>
                     </div>
                 </secction>
             </button>
