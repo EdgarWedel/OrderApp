@@ -1,11 +1,18 @@
 @font-face {
     font-family: 'palanquin';
     src: url('../BestellApp/fonts/Palanquin-Regular.ttf');
+    src: url('../fonts/Palanquin-Regular.ttf');
 }
 
 @font-face {
     font-family: 'palanquin-dark';
     src: url('../BestellApp/fonts/PalanquinDark-Regular.ttf');
+    src: url('../fonts/PalanquinDark-Regular.ttf');
+}
+
+.max-width {
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 :root {
@@ -325,10 +332,6 @@
 
 dialog::backdrop {
     background-color: rgba(231, 108, 31, 0.7);
-}
-
-.max-width {
-    width: 1920px;
 }
 
 .menu-underline {

@@ -1,7 +1,18 @@
 /* responsive at 1050px for IPad Pro */
+@media (min-width: 2000px) {
+    .basket-layout {
+        border-radius: 24px;
+        right: 300px;
+    }
+}
+
 @media (max-width: 1270px) {
     .hide {
         display: none;
+    }
+
+    .logo-btn {
+        padding-inline: 50px;
     }
 
     .hide-quantity {
@@ -27,7 +38,6 @@
 @media (max-width: 770px) {
     .header {
         width: stretch;
-        height: 80px;
     }
 
     .padding-left {
@@ -56,19 +66,8 @@
         padding: 8px;
     }
 
-    .logo {
-        height: 35px;
-        width: 90px;
-        padding: 0;
-    }
-
     .menu-btn {
         display: none;
-    }
-
-    .logo-btn {
-        padding-left: 20px;
-        height: 75px;
     }
 
     .big-img {
@@ -377,5 +376,11 @@
 
     .badge {
         right: -11px;
+    }
+}
+
+@media (min-height: 1000px) {
+    .basket-layout {
+        top: 20%;
     }
 }
