@@ -39,7 +39,7 @@ function getPizzaTemplate(pizzaIndex) {
 function getSaladTemplate(saladIndex) {
     return `
         <div class="menu-box">
-                <img class="menu-img" src="${foods.salads[saladIndex].image}" alt="">
+                <img class="menu-img" src="${foods.salads[saladIndex].image}" alt="Bild von einem Salad">
                 <div class="menu-info-box">
                     <div>
                         <h3 class="menu-box-head">${foods.salads[saladIndex].name}</h3>
@@ -77,8 +77,8 @@ function getBasketTemplate(basketIndex) {
                                                 ${foods.basket[basketIndex].amount === 1
             ? `
                                                         <button onclick="deleteItem(${basketIndex})" class="delete-btn">
-                                                            <img class="icon default" src="./assets/icons/delete.png" alt="">
-                                                            <img class="icon hover" src="./assets/hover/deletehover.png" alt="">
+                                                            <img class="icon default" src="./assets/icons/delete.png" alt="Mülleimer weiss">
+                                                            <img class="icon hover" src="./assets/hover/deletehover.png" alt="Mülleimar orange">
                                                         </button>
                                                     `
             : `
@@ -132,7 +132,7 @@ function renderDialog() {
             </header>
             <main>    
                 <div class="display-position">
-                    <img class="dialog-img" src="./assets/img/order-confirmed.png" alt="">
+                    <img class="dialog-img" src="./assets/img/order-confirmed.png" alt="Ein Lieferwagen">
                     <div>
                         <h2 class="dialog-head">Order confirmed!</h2>
                         <h3 class="dialog-under">Your food is on the way!</h3>
@@ -146,20 +146,20 @@ function getMobileNavBarTemplate() {
     return `
         <div class="mobile-nav-bar">
             <button class="mobile-nav-icon">
-                <img class="icon default" src="./assets/icons/home.png" alt="">
-                <img class="icon hover" src="./assets/hover/home.png" alt="">
+                <img class="icon default" src="./assets/icons/home.png" alt="Ein Haus weiss">
+                <img class="icon hover" src="./assets/hover/home.png" alt="Ein Haus orange">
             </button>
             <button class="mobile-nav-icon">
-                <img class="icon default" src="./assets/icons/person.png" alt="">
-                <img class="icon hover" src="./assets/hover/person hover.png" alt="">
+                <img class="icon default" src="./assets/icons/person.png" alt="Eine Person weiss">
+                <img class="icon hover" src="./assets/hover/person hover.png" alt="Eine Person orange">
             </button>
             <button class="mobile-nav-icon">
-                <img class="icon default" src="./assets/icons/takeout_dining_2.png" alt="">
-                <img class="icon hover" src="./assets/hover/takeout_dining_2 hover.png" alt="">
+                <img class="icon default" src="./assets/icons/takeout_dining_2.png" alt="Eine Liefertüte weiss">
+                <img class="icon hover" src="./assets/hover/takeout_dining_2 hover.png" alt="Eine Liefertüte orange">
             </button>
             <button id="mobile-basket-btn" class="mobile-nav-icon icon-wrapper" onclick="openBasket()">
-                <img class="icon default" src="./assets/icons/shopping_cart.png" alt="">
-                <img class="icon hover" src="./assets/hover/shopping_cart.png" alt="">
+                <img class="icon default" src="./assets/icons/shopping_cart.png" alt="Ein Einkaufswagen weiss">
+                <img class="icon hover" src="./assets/hover/shopping_cart.png" alt="Ein Einkaufswagen orange">
                 <div class="hide-quantity badge" id="quantity_bg">
                     <span class="quantity-num hide-quantity" id="quantity_basket">${foods.basket.length}</span>
                 </div>

@@ -161,11 +161,6 @@
         height: 80px;
     }
 
-    .mobile-nav-icon {
-        height: 28px;
-        width: 28px;
-    }
-
     .position-sticky {
         position: sticky;
         bottom: 0;
