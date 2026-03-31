@@ -144,7 +144,7 @@ function renderDialog() {
 
 function getMobileNavBarTemplate() {
     return `
-            <div class="mobile-nav-bar">
+        <div class="mobile-nav-bar">
             <button class="mobile-nav-icon">
                 <img class="icon default" src="./assets/icons/home.png" alt="">
                 <img class="icon hover" src="./assets/hover/home.png" alt="">
@@ -157,14 +157,12 @@ function getMobileNavBarTemplate() {
                 <img class="icon default" src="./assets/icons/takeout_dining_2.png" alt="">
                 <img class="icon hover" src="./assets/hover/takeout_dining_2 hover.png" alt="">
             </button>
-            <button id="mobile-basket-btn" class="mobile-nav-icon" onclick="openBasket()">
+            <button id="mobile-basket-btn" class="mobile-nav-icon icon-wrapper" onclick="openBasket()">
                 <img class="icon default" src="./assets/icons/shopping_cart.png" alt="">
                 <img class="icon hover" src="./assets/hover/shopping_cart.png" alt="">
-                <section class="hide-quantity" id="quantity_bg">
-                    <div class="quantity-bg">
+                <div class="hide-quantity badge" id="quantity_bg">
                     <span class="quantity-num hide-quantity" id="quantity_basket">${foods.basket.length}</span>
-                    </div>
-                </secction>
+                </div>
             </button>
         </div>
     `

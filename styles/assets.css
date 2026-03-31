@@ -1,9 +1,7 @@
-:root {
-    --primary-color: rgba(231, 108, 31, 1);
-    --secondary-color: rgb(134, 62, 2);
-    --third-color: rgba(253, 234, 220, 1);
-    --font-color-white: rgba(255, 255, 255, 1);
-    --palanquin: 'palanquin';
+.button {
+    padding: 0;
+    border-style: hidden;
+    background-color: var(--primary-color);
 }
 
 .add-btn {
@@ -13,6 +11,7 @@
     border-radius: 20px;
     border-style: hidden;
     width: 110px;
+    cursor: pointer;
 }
 
 .add-btn:hover {
@@ -37,8 +36,8 @@
 }
 
 .menu-img {
-    height: 140px;
-    width: 220px;
+    height: 120px;
+    width: 210px;
     border-radius: 12px;
     object-fit: cover;
 }
@@ -140,6 +139,13 @@
     background-color: var(--primary-color);
     color: white;
     margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary-color);
 }
 
 .position-close-btn {
@@ -156,34 +162,4 @@
 .mobile-nav-icon {
     background-color: rgba(54, 53, 52, 1);
     border-style: hidden;
-}
-
-@media (max-width: 770px) {
-
-    .menu-icon {
-        margin-top: -108px;
-    }
-
-    .menu-img {
-        height: 160px;
-        width: 400px;
-        border-radius: 12px;
-        object-fit: cover;
-    }
-}
-
-@media (max-width: 450px) {
-
-    .menu-icon {
-        height: 60px;
-        width: 58px;
-        position: absolute;
-        margin-top: -85px;
-    }
-
-    .menu-img {
-        width: auto;
-        height: 88px;
-        border-radius: 12px;
-    }
 }

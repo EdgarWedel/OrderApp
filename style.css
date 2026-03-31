@@ -16,7 +16,6 @@
 
 .big-img {
     width: 100%;
-    display: block;
     object-fit: cover;
     height: 500px;
 }
@@ -25,9 +24,15 @@
     color: var(--primary-color);
 }
 
+.header-image {
+    position: relative;
+    display: inline-block;
+    width: stretch;
+}
+
 .header-icon {
     position: absolute;
-    top: 520px;
+    top: 390px;
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
@@ -148,19 +153,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 115px;
 }
 
 .footer-info {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 60px;
     padding-bottom: 12px;
     padding-top: 12px;
     background-color: var(--primary-color);
     width: stretch;
+    height: 80px;
 }
 
 .footer-font {
@@ -185,6 +189,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 20px;
+    height: 660px;
 }
 
 .basket-headline {
@@ -344,4 +349,52 @@ dialog::backdrop {
     width: 440px;
     background-color: rgba(54, 53, 52, 1);
     border-radius: 30px;
+}
+
+.mobile-nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(54, 53, 52, 1);
+    width: stretch;
+    height: 80px;
+}
+
+.mobile-nav-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.position-sticky {
+    position: sticky;
+    bottom: 0;
+    width: stretch;
+}
+
+.quantity-num {
+    color: var(--primary-color);
+    border-radius: 50%;
+    font-family: var(--palanquin);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -5px;
+}
+
+.badge {
+    background-color: var(--third-color);
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -11px;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
 }
