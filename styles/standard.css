@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'palanquin';
-    src: url('/Palanquin-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'palanquin-dark';
-    src: url('/PalanquinDark-Regular.ttf');
-}
-
 * {
     scroll-behavior: smooth;
     font-family: 'palanquin-dark';

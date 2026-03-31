@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'palanquin';
+    src: url(/Palanquin-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'palanquin-dark';
+    src: url(/PalanquinDark-Regular.ttf);
+}
+
 :root {
     --primary-color: rgba(231, 108, 31, 1);
     --secondary-color: rgb(134, 62, 2);
