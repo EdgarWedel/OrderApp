@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'palanquin';
-    src: url(/fonts/Palanquin-Regular.ttf);
+    src: url(/Palanquin-Regular.ttf);
 }
 
 @font-face {
     font-family: 'palanquin-dark';
-    src: url(/fonts/PalanquinDark-Regular.ttf);
+    src: url(/PalanquinDark-Regular.ttf);
 }
 
 * {
