@@ -2,7 +2,7 @@
 @media (min-width: 2000px) {
     .basket-layout {
         border-radius: 24px;
-        right: 25%;
+        right: 20%;
     }
 }
 
@@ -376,6 +376,25 @@
 
     .badge {
         right: -11px;
+    }
+}
+
+@media (max-width: 350px) {
+    .display {
+        font-size: 26px;
+        padding-bottom: 8px;
+    }
+
+    .total-table {
+        padding-inline: 15px;
+    }
+
+    .buy-btn {
+        border-radius: 0px;
+    }
+
+    .basket-food-box {
+        border-radius: 0px;
     }
 }
 
