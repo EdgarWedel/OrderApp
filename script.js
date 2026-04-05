@@ -28,39 +28,67 @@ function init() {
 };
 
 function addToBasketBurger(burgerIndex) {
-    let addedItem = {
-        "amount": 1,
-        "name": foods.burgers[burgerIndex].name,
-        "price": foods.burgers[burgerIndex].price
+    let existingItem = foods.basket.find(item =>
+        item.name === foods.burgers[burgerIndex].name
+    );
+
+    if (existingItem) {
+        existingItem.amount++;
+    } else {
+        let addedItem = {
+            "amount": 1,
+            "name": foods.burgers[burgerIndex].name,
+            "price": foods.burgers[burgerIndex].price
+        };
+
+        foods.basket.push(addedItem);
     }
 
-    foods.basket.push(addedItem);
     renderBasket();
-    renderMobileNavBar()
+    renderQuantity();
 }
 
 function addToBasketPizza(pizzaIndex) {
-    let addedItem = {
-        "amount": 1,
-        "name": foods.pizzas[pizzaIndex].name,
-        "price": foods.pizzas[pizzaIndex].price
+
+    let existingItem = foods.basket.find(item =>
+        item.name === foods.pizzas[pizzaIndex].name
+    );
+
+    if (existingItem) {
+        existingItem.amount++;
+    } else {
+        let addedItem = {
+            "amount": 1,
+            "name": foods.pizzas[pizzaIndex].name,
+            "price": foods.pizzas[pizzaIndex].price
+        };
+
+        foods.basket.push(addedItem);
     }
 
-    foods.basket.push(addedItem);
     renderBasket();
-    renderMobileNavBar()
+    renderQuantity();
 }
 
 function addToBasketSalad(saladIndex) {
-    let addedItem = {
-        "amount": 1,
-        "name": foods.salads[saladIndex].name,
-        "price": foods.salads[saladIndex].price
+    let existingItem = foods.basket.find(item =>
+        item.name === foods.salads[saladIndex].name
+    );
+
+    if (existingItem) {
+        existingItem.amount++;
+    } else {
+        let addedItem = {
+            "amount": 1,
+            "name": foods.salads[saladIndex].name,
+            "price": foods.salads[saladIndex].price
+        };
+
+        foods.basket.push(addedItem);
     }
 
-    foods.basket.push(addedItem);
     renderBasket();
-    renderMobileNavBar()
+    renderQuantity();
 }
 
 function renderBasket() {
@@ -87,7 +115,6 @@ function renderBasket() {
 function renderMobileNavBar() {
     let navBar = document.getElementById('responsive_nav_bar');
     navBar.innerHTML = getMobileNavBarTemplate();
-    showQuantity();
 }
 
 function renderTotalPrice() {
@@ -115,17 +142,19 @@ window.onclick = function (event) {
 function increaseAmount(basketIndex) {
     foods.basket[basketIndex].amount++;
     renderBasket();
+    renderQuantity();
 }
 
 function decreaseAmount(basketIndex) {
     foods.basket[basketIndex].amount--;
     renderBasket();
+    renderQuantity();
 }
 
 function deleteItem(basketIndex) {
     foods.basket.splice(basketIndex, 1);
     renderBasket();
-    renderMobileNavBar();
+    renderQuantity();
 }
 
 function openBasket() {
@@ -133,12 +162,17 @@ function openBasket() {
     basket.classList.toggle('hide');
 }
 
-function showQuantity() {
+function renderQuantity() {
     let quantity = document.getElementById('quantity_basket');
     let quantityBg = document.getElementById('quantity_bg');
-
+    
     if (foods.basket.length > 0) {
         quantity.classList.remove('hide-quantity');
         quantityBg.classList.remove('hide-quantity');
+    } else if (foods.basket.length == 0) {
+        quantity.classList.add('hide-quantity');
+        quantityBg.classList.add('hide-quantity');
     }
+    
+    quantity.innerHTML = foods.basket.length;
 }
