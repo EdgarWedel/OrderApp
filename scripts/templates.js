@@ -90,7 +90,7 @@ function getBasketTemplate(basketIndex) {
                         <span id="amount_ref" class="amount">${foods.basket[basketIndex].amount}</span>
                         <button onclick="increaseAmount(${basketIndex})" class="quantity-btn">+</button>
                     </div>
-                    <span class="basket-price">${foods.basket[basketIndex].price * foods.basket[basketIndex].amount}0 €</span>
+                    <span class="basket-price">${(foods.basket[basketIndex].price * foods.basket[basketIndex].amount).toFixed(2)} €</span>
                 </div>
             </div>    
     `
@@ -132,7 +132,7 @@ function renderDialog() {
             </header>
             <main>    
                 <div class="display-position">
-                    <img class="dialog-img" src="./assets/img/order-confirmed.png" alt="Ein Lieferwagen">
+                    <img class="dialog-img" src="./assets/img/order-confirmed.webp" alt="Ein Lieferwagen">
                     <div>
                         <h2 class="dialog-head">Order confirmed!</h2>
                         <h3 class="dialog-under">Your food is on the way!</h3>
