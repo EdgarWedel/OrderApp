@@ -126,6 +126,10 @@ function openDialog() {
     confirmRef = document.getElementById('confirm_dialog');
     confirmRef.showModal()
     confirmRef.innerHTML = renderDialog();
+    foods.basket.length = 0;
+    renderBasket();
+    openBasket();
+    renderQuantity();
 }
 
 function closeDialog() {
