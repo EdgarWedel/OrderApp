@@ -4,17 +4,9 @@ function init() {
     let saladRef = document.getElementById('salad_menu');
     let basketRef = document.getElementById('basket');
 
-    for (let burgerIndex = 0; burgerIndex < foods.burgers.length; burgerIndex++) {
-        burgerRef.innerHTML += getBurgerTemplate(burgerIndex);
-    }
-
-    for (let pizzaIndex = 0; pizzaIndex < foods.pizzas.length; pizzaIndex++) {
-        pizzaRef.innerHTML += getPizzaTemplate(pizzaIndex);
-    }
-
-    for (let saladIndex = 0; saladIndex < foods.salads.length; saladIndex++) {
-        saladRef.innerHTML += getSaladTemplate(saladIndex);
-    }
+    renderFoods(foods.burgers, burgerRef, getBurgerTemplate);
+    renderFoods(foods.pizzas, pizzaRef, getPizzaTemplate);
+    renderFoods(foods.salads, saladRef, getSaladTemplate);
 
     if (foods.basket.length < 2) {
         basketRef.innerHTML = getEmptyBasketTemplate();
@@ -26,6 +18,12 @@ function init() {
     }
     renderMobileNavBar();
 };
+
+function renderFoods(array, ref, template) {
+    for (let index = 0; index < array.length; index++) {
+        ref.innerHTML += template(index)
+    }
+}
 
 function addToBasketBurger(burgerIndex) {
     let existingItem = foods.basket.find(item =>

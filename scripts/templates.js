@@ -1,15 +1,15 @@
-function getBurgerTemplate(burgerIndex) {
+function getBurgerTemplate(index) {
     return `
             <div class="menu-box">
-                <img class="menu-img" src="${foods.burgers[burgerIndex].image}" alt="">
+                <img class="menu-img" src="${foods.burgers[index].image}" alt="">
                 <div class="menu-info-box">
                     <div>
-                        <h3 class="menu-box-head">${foods.burgers[burgerIndex].name}</h3>
-                        <span class="menu-box-underline">${foods.burgers[burgerIndex].info}</span>
+                        <h3 class="menu-box-head">${foods.burgers[index].name}</h3>
+                        <span class="menu-box-underline">${foods.burgers[index].info}</span>
                     </div>
                     <div class="add-box">
-                        <p class="price">${foods.burgers[burgerIndex].price}0 €</p>
-                        <button onclick="addToBasketBurger(${burgerIndex})" id="add_btn" class="add-btn">Add to basket</button>
+                        <p class="price">${foods.burgers[index].price}0 €</p>
+                        <button onclick="addToBasketBurger(${index})" id="add_btn" class="add-btn">Add to basket</button>
                     </div>
                 </div>
             </div>
