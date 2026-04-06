@@ -17,18 +17,18 @@ function getBurgerTemplate(index) {
     `
 }
 
-function getPizzaTemplate(pizzaIndex) {
+function getPizzaTemplate(index) {
     return `
         <div class="menu-box">
-                <img class="menu-img" src="${foods.pizzas[pizzaIndex].image}" alt="">
+                <img class="menu-img" src="${foods.pizzas[index].image}" alt="">
                 <div class="menu-info-box">
                     <div>
-                        <h3 class="menu-box-head">${foods.pizzas[pizzaIndex].name}</h3>
-                        <span class="menu-box-underline">${foods.pizzas[pizzaIndex].info}</span>
+                        <h3 class="menu-box-head">${foods.pizzas[index].name}</h3>
+                        <span class="menu-box-underline">${foods.pizzas[index].info}</span>
                     </div>
                     <div class="add-box">
-                        <p class="price">${foods.pizzas[pizzaIndex].price}0 €</p>
-                        <button onclick="addToBasketPizza(${pizzaIndex})" id="add_btn" class="add-btn">Add to basket</button>
+                        <p class="price">${foods.pizzas[index].price}0 €</p>
+                        <button onclick="addToBasketPizza(${index})" id="add_btn" class="add-btn">Add to basket</button>
                     </div>
                 </div>
             </div>
@@ -36,18 +36,18 @@ function getPizzaTemplate(pizzaIndex) {
     `
 }
 
-function getSaladTemplate(saladIndex) {
+function getSaladTemplate(index) {
     return `
         <div class="menu-box">
-                <img class="menu-img" src="${foods.salads[saladIndex].image}" alt="Bild von einem Salad">
+                <img class="menu-img" src="${foods.salads[index].image}" alt="Bild von einem Salad">
                 <div class="menu-info-box">
                     <div>
-                        <h3 class="menu-box-head">${foods.salads[saladIndex].name}</h3>
-                        <span class="menu-box-underline">${foods.salads[saladIndex].info}</span>
+                        <h3 class="menu-box-head">${foods.salads[index].name}</h3>
+                        <span class="menu-box-underline">${foods.salads[index].info}</span>
                     </div>
                     <div class="add-box">
-                        <p class="price">${foods.salads[saladIndex].price}0 €</p>
-                        <button onclick="addToBasketSalad(${saladIndex})" id="add_btn" class="add-btn">Add to basket</button>
+                        <p class="price">${foods.salads[index].price}0 €</p>
+                        <button onclick="addToBasketSalad(${index})" id="add_btn" class="add-btn">Add to basket</button>
                     </div>
                 </div>
             </div>
