@@ -61,7 +61,7 @@
     }
 
     .basket-layout {
-        border-radius: 16px 0 0 0;
+        border-radius: 16px 0 0 16px;
         top: 60px;
         padding: 8px;
     }
